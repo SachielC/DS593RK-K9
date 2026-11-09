@@ -1,0 +1,6 @@
+[submodule "k9db"]
+	path = k9db
+	url = https://github.com/brownsys/K9db.git
+[submodule "rulekeeper"]
+	path = rulekeeper
+	url = https://github.com/mafsbaptista/rulekeeper.git
