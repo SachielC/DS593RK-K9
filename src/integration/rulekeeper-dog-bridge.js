@@ -16,6 +16,8 @@ const fs = require('fs');
 const path = require('path');
 const { DOGBuilder } = require('../dog/DOGBuilder');
 const { PolicyTranslator } = require('../dog/PolicyTranslator');
+const { createRuleKeeperReadMiddleware } = require('./RuleKeeperReadMiddleware');
+const { createRuleKeeperWriteService } = require('./RuleKeeperWriteService');
 
 const DERIVED_REGO_PATH = path.join(
   __dirname,
@@ -77,4 +79,4 @@ async function initWithDOG(mongoose, rulekeeper, manifestPath) {
   return { dog, timings };
 }
 
-module.exports = { initWithDOG };
+module.exports = { initWithDOG, createRuleKeeperReadMiddleware, createRuleKeeperWriteService };

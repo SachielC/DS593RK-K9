@@ -1,0 +1,20 @@
+{
+  "name": "ds593rk-k9",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node src/app/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@open-policy-agent/opa-wasm": "1.2.0",
+    "colors": "1.4.0",
+    "debug": "4.3.7",
+    "express": "4.21.2",
+    "jsonwebtoken": "9.0.2",
+    "mongoose": "5.13.23",
+    "request-context": "2.0.0",
+    "utf8": "3.0.0"
+  }
+}
